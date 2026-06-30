@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sivagurunathan V - Portfolio</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #2a5d9f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+
+  header p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  nav {
+    background-color: #1c3f6e;
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  section {
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    color: #2a5d9f;
+    border-bottom: 2px solid #2a5d9f;
+    padding-bottom: 8px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  ul.skills-list {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+
+  ul.skills-list li {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .project-box {
+    border: 1px solid #dddddd;
+    background-color: #fafafa;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .project-box h3 {
+    margin-top: 0;
+    color: #1c3f6e;
+  }
+
+  .project-box p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .project-box a {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    background-color: #2a5d9f;
+    padding: 8px 14px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .project-box a:hover {
+    background-color: #1c3f6e;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  table, th, td {
+    border: 1px solid #cccccc;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  th {
+    background-color: #2a5d9f;
+    color: white;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+
+  footer {
+    background-color: #1c3f6e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+
+  #resume{
+    background-color: #2a5d9f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  #resume:hover {
+    background-color: #1c3f6e;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Sivagurunathan V</h1>
+  <p>Full Stack Developer (Fresher)</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="about-text">
+      Hi, I am Sivagurunathan, a final year B.Sc Computer Science student from Tiruchirappalli, Tamil Nadu.
+      I have hands-on experience with HTML, CSS, JavaScript, Python and Flask. I built a working web application
+      called Farm Workers Due Maintenance App as my main project. I am currently learning React.js and looking
+      forward to starting my career as a Full Stack Developer.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>Flask (Basics)</li>
+      <li>SQLite</li>
+      <li>MySQL (Basics)</li>
+      <li>Git and GitHub</li>
+      <li>Currently Learning: React.js</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-box">
+      <h3>Farm Workers Due Maintenance App</h3>
+      <p>
+        This is a web application I built to help farm owners manage their daily wage workers.
+        It tracks the work assigned to each worker, records payments, calculates pending dues,
+        and keeps a payment history. I used HTML, CSS and JavaScript for the front-end, and
+        Python with Flask for the back-end. The data is stored using SQLite database.
+      </p>
+      <a href="https://github.com/SivagurunathanXcode" target="_blank">View Code on GitHub</a>
+    </div>
+
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <table>
+      <tr>
+        <th>Certificate</th>
+        <th>Issued By</th>
+        <th>Duration</th>
+      </tr>
+      <tr>
+        <td>Certified Web Developer</td>
+        <td>Edunet IBM SkillsBuild</td>
+        <td>Jul 2025 - Nov 2025</td>
+      </tr>
+      <tr>
+        <td>Certified Python Developer</td>
+        <td>GUVI</td>
+        <td>Mar 2025 - May 2025</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="contact" class="contact-info">
+    <h2>Contact Me</h2>
+    <p>Email: sivagurunathanv23@gmail.com</p>
+    <p>Phone: 6369615234</p>
+    <p>Location: Tiruchirappalli, Tamil Nadu</p>
+    <p>GitHub: <a href="https://github.com/SivagurunathanXcode" target="_blank">github.com/SivagurunathanXcode</a></p>
+
+    <a href="Capminds(Resume).pdf" download>
+    <button id="resume">Download Resume</button>
+    </a>
+    <button id="resume" onclick="scrollToTop()">Back to Top</button>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Sivagurunathan V. All rights reserved.</p>
+</footer>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // simple welcome message in console
+  console.log("Thanks for visiting my portfolio!");
+</script>
+
+</body>
+</html>
