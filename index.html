@@ -95,6 +95,41 @@
     margin-bottom: 20px;
   }
 
+  .stats-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 150px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.stat-card h3 {
+  color: #2a5d9f;
+  font-size: 32px;
+  margin: 0;
+}
+
+.stat-card p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
   .project-box h3 {
     margin-top: 0;
     color: #1c3f6e;
@@ -194,6 +229,34 @@
       forward to starting my career as a Full Stack Developer.
     </p>
   </section>
+
+  <section id="stats">
+    <h2>Professional Highlights</h2>
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            <h3>1+</h3>
+            <p>Real World Project</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>8+</h3>
+            <p>Technologies Learned</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>2</h3>
+            <p>Professional Certifications</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>2026</h3>
+            <p>Graduate</p>
+        </div>
+
+    </div>
+</section>
 
   <section id="skills">
     <h2>My Skills</h2>
