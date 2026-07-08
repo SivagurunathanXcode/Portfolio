@@ -73,6 +73,24 @@
     padding-bottom: 8px;
   }
 
+  #typing-text{
+  font-size:18px;
+  margin-top:10px;
+  min-height:25px;
+  font-weight:bold;
+}
+
+#typing-text::after{
+  content:"|";
+  animation: blink .8s infinite;
+}
+
+@keyframes blink{
+  50%{
+    opacity:0;
+  }
+}
+
   .about-text {
     font-size: 16px;
     line-height: 1.6;
@@ -207,7 +225,7 @@
 
 <header>
   <h1>Sivagurunathan V</h1>
-  <p>Full Stack Developer (Fresher)</p>
+  <p id="typing-text"></p>
 </header>
 
 <nav>
@@ -334,6 +352,47 @@
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
+
+  const roles = [
+  "Full Stack Developer",
+  "Python Developer",
+  "Flask Developer",
+  "Frontend Developer",
+  "Software Engineer"
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+const typingText = document.getElementById("typing-text");
+
+function typeEffect(){
+
+  const currentRole = roles[roleIndex];
+
+  if(!deleting){
+    typingText.textContent = currentRole.substring(0,charIndex++);
+  }else{
+    typingText.textContent = currentRole.substring(0,charIndex--);
+  }
+
+  let speed = deleting ? 50 : 100;
+
+  if(!deleting && charIndex === currentRole.length + 1){
+    deleting = true;
+    speed = 1500;
+  }
+
+  if(deleting && charIndex === 0){
+    deleting = false;
+    roleIndex = (roleIndex + 1) % roles.length;
+  }
+
+  setTimeout(typeEffect,speed);
+}
+
+typeEffect();
 
   // simple welcome message in console
   console.log("Thanks for visiting my portfolio!");
