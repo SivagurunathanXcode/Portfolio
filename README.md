@@ -43,11 +43,13 @@ Tools
 Currently Learning
 
 * React
-* Node.js
 * Flask
-* FastAPI
 * MongoDB
-* System Design
+* RAG
+* Agentic AI
+* LangChain
+* LangGraph
+* AWS
 * Machine Learning
 
 ---
@@ -79,7 +81,7 @@ A web application for managing farm workers, tracking daily work, payments, pend
 * HTML
 * CSS
 * JavaScript
-* MySQL
+* SQLite
 
 ---
 
@@ -90,7 +92,6 @@ My goal is to become a highly skilled Software Engineer specializing in:
 * Backend Development
 * Full Stack Engineering
 * Artificial Intelligence
-* Distributed Systems
 
 I am actively preparing for product-based companies such as Zoho, Freshworks, Citi, Amazon, Google, and global opportunities.
 
