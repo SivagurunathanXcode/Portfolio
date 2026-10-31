@@ -8,233 +8,13 @@
 <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
 <link rel="shortcut icon" href="./favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="./favicon.png">
+<link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#2563eb">
-<style>
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
-    color: #222222;
-    margin: 0;
-    padding: 0;
-  }
 
-  #progress-bar{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 5px;
-  background: linear-gradient(90deg,#2a5d9f,#4a8de4);
-  z-index: 9999;
-  transition: width 0.1s linear;
-}
-
-  header {
-    background-color: #2a5d9f;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  header h1 {
-    margin: 0;
-    font-size: 32px;
-  }
-
-  header p {
-    font-size: 18px;
-    margin-top: 10px;
-  }
-
-  nav {
-    background-color: #1c3f6e;
-    text-align: center;
-    padding: 10px;
-  }
-
-  nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 16px;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
-  }
-
-  .container {
-    width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-  section {
-    background-color: white;
-    border: 1px solid #cccccc;
-    padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  h2 {
-    color: #2a5d9f;
-    border-bottom: 2px solid #2a5d9f;
-    padding-bottom: 8px;
-  }
-
-  #typing-text{
-  font-size:18px;
-  margin-top:10px;
-  min-height:25px;
-  font-weight:bold;
-}
-
-#typing-text::after{
-  content:"|";
-  animation: blink .8s infinite;
-}
-
-@keyframes blink{
-  50%{
-    opacity:0;
-  }
-}
-
-  .about-text {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-
-  ul.skills-list {
-    list-style-type: square;
-    padding-left: 20px;
-  }
-
-  ul.skills-list li {
-    margin-bottom: 8px;
-    font-size: 16px;
-  }
-
-  .project-box {
-    border: 1px solid #dddddd;
-    background-color: #fafafa;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-
-  .stats-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.stat-card {
-  flex: 1;
-  min-width: 150px;
-  background: #fafafa;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-  padding: 20px;
-  transition: 0.3s;
-}
-
-.stat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-}
-
-.stat-card h3 {
-  color: #2a5d9f;
-  font-size: 32px;
-  margin: 0;
-}
-
-.stat-card p {
-  margin-top: 10px;
-  font-size: 15px;
-}
-
-  .project-box h3 {
-    margin-top: 0;
-    color: #1c3f6e;
-  }
-
-  .project-box p {
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
-  .project-box a {
-    display: inline-block;
-    margin-top: 10px;
-    color: white;
-    background-color: #2a5d9f;
-    padding: 8px 14px;
-    text-decoration: none;
-    font-size: 14px;
-  }
-
-  .project-box a:hover {
-    background-color: #1c3f6e;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-
-  table, th, td {
-    border: 1px solid #cccccc;
-  }
-
-  th, td {
-    padding: 10px;
-    text-align: left;
-    font-size: 15px;
-  }
-
-  th {
-    background-color: #2a5d9f;
-    color: white;
-  }
-
-  .contact-info p {
-    font-size: 16px;
-    margin: 8px 0;
-  }
-
-  footer {
-    background-color: #1c3f6e;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-  }
-
-  #resume{
-    background-color: #2a5d9f;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 20px;
-  }
-
-  #resume:hover {
-    background-color: #1c3f6e;
-  }
-</style>
 </head>
 <body>
 
-  <div id="progress-bar"></div>
+<div id="progress-bar"></div>
 
 <header>
   <h1>Sivagurunathan V</h1>
@@ -254,10 +34,12 @@
   <section id="about">
     <h2>About Me</h2>
     <p class="about-text">
-      Hi, I am Sivagurunathan, a final year B.Sc Computer Science student from Tiruchirappalli, Tamil Nadu.
-      I have hands-on experience with HTML, CSS, JavaScript, Python and Flask. I built a working web application
-      called Farm Workers Due Maintenance App as my main project. I am currently learning React.js and looking
-      forward to starting my career as a Full Stack Developer.
+      Hi, I am Sivagurunathan, a B.Sc. Computer Science graduate (Madras University, 2026) from Tiruchirappalli, Tamil Nadu.
+    I have hands-on experience with Python, Flask, HTML and CSS, along with basic knowledge of JavaScript, Java and C.
+    I built and deployed a multi-user full-stack web application, the Farm Workers Due Maintenance App, as my main project.
+    I enjoy problem solving and logical thinking, and I am looking for an Associate Software Engineer role where I can
+    learn from senior developers and build real products. I am currently learning React.js, RAG, Agentic AI, LangChain,
+    LangGraph and AWS.
     </p>
   </section>
 
@@ -292,16 +74,16 @@
   <section id="skills">
     <h2>My Skills</h2>
     <ul class="skills-list">
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript(Basics)</li>
       <li>Python</li>
-      <li>Java</li>
+      <li>Java(Basics)</li>
       <li>Flask (Basics)</li>
-      <li>SQLite</li>
+      <li>SQLite(Basics)</li>
       <li>MySQL (Basics)</li>
       <li>Git and GitHub</li>
-      <li>Currently Learning: React.js</li>
+      <li>Currently Learning: React.js, RAG, Agentic AI, LangChain, LangGraph and AWS.</li>
     </ul>
   </section>
 
@@ -317,6 +99,7 @@
         Python with Flask for the back-end. The data is stored using SQLite database.
       </p>
       <a href="https://github.com/SivagurunathanXcode" target="_blank">View Code on GitHub</a>
+      <a href="https://farm-fixed.onrender.com" target="_blank">View Live App</a>
     </div>
 
   </section>
@@ -349,7 +132,7 @@
     <p>Location: Tiruchirappalli, Tamil Nadu</p>
     <p>GitHub: <a href="https://github.com/SivagurunathanXcode" target="_blank">github.com/SivagurunathanXcode</a></p>
 
-    <a href="Capminds(Resume).pdf" download>
+    <a href="Sivagurunathan_resume.pdf" download>
     <button id="resume">Download Resume</button>
     </a>
     <button id="resume" onclick="scrollToTop()">Back to Top</button>
@@ -388,7 +171,6 @@
   const roles = [
   "Full Stack Developer",
   "Python Developer",
-  "Flask Developer",
   "Frontend Developer",
   "Software Engineer"
 ];
